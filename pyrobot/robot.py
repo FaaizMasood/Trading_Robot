@@ -13,7 +13,7 @@ class PyRobot():
 # create a new instance of this object
 # always need client ID , Need URL , Need creditials path , need a trading account to where we 
 # are going to place trades 
-    def__init__(self, client_id : str, redirect_url: str, credentials_path: str = None, trading_account:str = None,) -> None:
+    def__init__(self, client_id: str, redirect_url: str, credentials_path: str = None, trading_account: str = None) -> None:
     """[summary]
 
     Args:
