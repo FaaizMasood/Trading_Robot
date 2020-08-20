@@ -15,18 +15,11 @@ class PyRobot():
 # create a new instance of this object
 # always need client ID , Need URL , Need creditials path , need a trading account to where we 
 # are going to place trades 
-    def__init__(self, client_id: str, redirect_url: str, credentials_path: str = None, trading_account: str = None) -> None:
-    """[summary]
-
-    Args:
-        client_id (str): [description]
-        redirect_url (str): [description]
-        credentials_path (str, optional): [description]. Defaults to None.
-        trading_account (str, optional): [description]. Defaults to None.
-    """
+    def __init__(self, client_id: str, redirect_uri: str, credentials_path: str = None, trading_account: str = None) -> None:
+        
         self.trading_account : str = trading_account
         self.client_id : str = client_id
-        self.redirect_url: str = redirect_url
+        self.redirect_uri: str = redirect_uri
         self.credentials_path : str = credentials_path
         # a private method which we will create below
         # session property will represent TD client object and it will be returned from 
